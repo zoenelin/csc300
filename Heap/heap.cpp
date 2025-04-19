@@ -86,7 +86,7 @@ void HEAP::deleteH(int data) {
     heapifyDown(index);
 }
 
-
+// Task 1 = implement heapifyDown() function
 void HEAP::heapifyDown(int index) 
 {
     while (leftChild(index) < heapSize) {
@@ -102,7 +102,7 @@ void HEAP::heapifyDown(int index)
     }
 }
 
- 
+// Task 2 - implement buildH() function 
 void HEAP::buildH(int arr[], int n) 
 {
     if (array != nullptr)
@@ -125,6 +125,7 @@ void HEAP::buildH(int arr[], int n)
     }
 }
 
+// Task 3 implement replace() function 
 void HEAP::replace(int oldData, int newData)
 {
     int index = -1;
@@ -154,6 +155,7 @@ void HEAP::replace(int oldData, int newData)
     }
 }
 
+// Task 4 - Implement heapSort() function
 void HEAP::heapSort(int arr[], int n)
 {
     for (int i = (n / 2) - 1; i >= 0; i--)
